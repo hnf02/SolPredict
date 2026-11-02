@@ -52,7 +52,7 @@ Standardised weights of the ridge model (target: tomorrow's clearness):
 ## Failure cases
 
 1. **Storms are invisible to the model.** The 10 worst test days were all clouds or rain, and 9 of them were over-forecasts: a sunny forecast for a stormy day. The single worst, 2 May 2024, received 2.8 kWh/m² against 6.9 forecast. Of the 50 worst days, 49 were clouds or rain and one dust or haze; the worst 10% of days account for 40% of all daily error. The model only sees today's conditions, so it cannot know a storm is coming. This is the main limitation.
-2. **November: worse than "tomorrow = today".** November skies are steady (no November test day had an average clearness above 0.7), so yesterday is an excellent guide. The model forecast about 15 W/m² too little at almost every hour, pulling towards the long-term average (RMSE 24.7 vs 19.7 W/m² for persistence).
+2. **November: worse than "tomorrow = today".** November skies are steady (daily clearness only ranged from 0.60 to 0.74), so yesterday is an excellent guide. The model forecast about 15 W/m² too little at almost every hour, pulling towards the long-term average (RMSE 24.7 vs 19.7 W/m² for persistence).
 3. **Late winter and spring are hardest.** February and March have the largest errors (model RMSE 106 and 120 W/m²), when frontal systems bring cloud and rain to northern Oman.
 
 ## Limitations
