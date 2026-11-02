@@ -221,6 +221,10 @@ One change was made after test scores were visible: the second baseline was repl
 
 **Libraries.** NumPy, pandas, scikit-learn, Matplotlib, joblib, pytest. No pretrained models or reused project code.
 
+**My contribution.** I chose the problem, the site and the data source. I directed the work and made the final decisions on the approach: predicting clearness, the two baselines, the chronological split, and keeping ridge as the chosen model. I reviewed and ran the code, checked the results, and can explain every part of the workflow.
+
+**AI assistance.** The code was written with AI assistance: I directed it and reviewed it, and AI tools wrote parts of it. All documentation (this README, the model card, the data card and the verification report) was written by AI and reviewed by me.
+
 **Licence.** Code: Apache 2.0 (`LICENSE`).
 
 
