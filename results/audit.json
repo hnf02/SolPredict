@@ -1,0 +1,166 @@
+{
+  "layer1_data": {
+    "rows": 96432,
+    "expected_hours": 96432,
+    "missing_hours": 0,
+    "duplicate_hours": 0,
+    "missing_values": {
+      "ALLSKY_SFC_SW_DWN": 0,
+      "CLRSKY_SFC_SW_DWN": 0,
+      "TOA_SW_DWN": 0,
+      "T2M": 0,
+      "RH2M": 0,
+      "WS10M": 0,
+      "PRECTOTCORR": 0
+    },
+    "night_hours_with_sun_above_1_wm2": 0,
+    "hours_ghi_above_toa": 0,
+    "hours_ghi_above_clear_sky_by_50_wm2": 0,
+    "max_ghi_wm2": 1104.1,
+    "hour_of_highest_mean_ghi": 12,
+    "time_standard": "LST (local solar time) per file header",
+    "note_on_clock_time": "Ibri is 3.48 deg west of Oman's 60 deg E time meridian, so solar noon is about 14 min after 12:00 Oman time (plus up to +/-16 min over the year)"
+  },
+  "layer2_leakage": {
+    "perturbed_forecast_days": 20,
+    "features_unchanged_when_forecast_day_changes": true,
+    "target_did_change": true,
+    "split_dates": {
+      "train": [
+        "2015-01-02",
+        "2022-12-31"
+      ],
+      "valid": [
+        "2023-01-01",
+        "2023-12-31"
+      ],
+      "test": [
+        "2024-01-01",
+        "2025-12-31"
+      ]
+    },
+    "split_is_chronological": true,
+    "validation_rmse": {
+      "real_model": 61.72,
+      "model_trained_on_shuffled_targets": 108.88,
+      "persistence": 72.16,
+      "seasonal": 68.04
+    },
+    "shuffled_model_no_better_than_seasonal": true
+  },
+  "layer4_results": {
+    "months_where_model_beats_persistence": 11,
+    "worst_month": 3,
+    "best_month": 11,
+    "model_beats_persistence_in_at_least_10_months": true,
+    "best_days": [
+      {
+        "date": "2024-08-10",
+        "actual": 6560.08,
+        "forecast": 6559.974,
+        "abs_err": 0.0,
+        "clearness": 0.613,
+        "haze": 0.628,
+        "rain": 41.07,
+        "humidity": 67.055
+      },
+      {
+        "date": "2025-04-19",
+        "actual": 6637.05,
+        "forecast": 6635.824,
+        "abs_err": 0.001,
+        "clearness": 0.628,
+        "haze": 0.631,
+        "rain": 0.0,
+        "humidity": 25.413
+      },
+      {
+        "date": "2024-04-20",
+        "actual": 7655.1,
+        "forecast": 7653.28,
+        "abs_err": 0.002,
+        "clearness": 0.722,
+        "haze": 0.725,
+        "rain": 0.0,
+        "humidity": 27.896
+      }
+    ],
+    "worst_days": [
+      {
+        "date": "2024-05-02",
+        "actual": 2755.45,
+        "forecast": 6865.387,
+        "abs_err": 4.11,
+        "clearness": 0.254,
+        "haze": 0.624,
+        "rain": 24.46,
+        "humidity": 56.586
+      },
+      {
+        "date": "2024-02-11",
+        "actual": 1652.26,
+        "forecast": 5587.623,
+        "abs_err": 3.935,
+        "clearness": 0.209,
+        "haze": 0.597,
+        "rain": 1.01,
+        "humidity": 38.05
+      },
+      {
+        "date": "2024-02-29",
+        "actual": 2275.9,
+        "forecast": 5671.383,
+        "abs_err": 3.395,
+        "clearness": 0.26,
+        "haze": 0.653,
+        "rain": 0.53,
+        "humidity": 45.771
+      }
+    ],
+    "annual_ghi_kwh_m2": {
+      "2015": 2244.0,
+      "2016": 2228.0,
+      "2017": 2213.0,
+      "2018": 2201.0,
+      "2019": 2175.0,
+      "2020": 2226.0,
+      "2021": 2234.0,
+      "2022": 2168.0,
+      "2023": 2142.0,
+      "2024": 2105.0,
+      "2025": 2169.0
+    },
+    "annual_tilted_25deg_kwh_m2_nasa": {
+      "2015": 2370.0,
+      "2016": 2355.0,
+      "2017": 2330.0,
+      "2018": 2323.0,
+      "2019": 2281.0,
+      "2020": 2359.0,
+      "2021": 2365.0,
+      "2022": 2289.0,
+      "2023": 2252.0,
+      "2024": 2213.0,
+      "2025": 2287.0
+    },
+    "tilted_25deg_2015_2016_mean_nasa": 2362.0,
+    "tilted_25deg_2015_2025_mean_nasa": 2311.0,
+    "tilted_25deg_pvgis_sarah_2005_2016": 2547.62,
+    "nasa_vs_pvgis_percent_overlap_years": -7.3,
+    "nasa_vs_pvgis_percent_all_years": -9.3,
+    "capacity_factor_simple_conversion": 0.25,
+    "capacity_factor_ibri_ii_expected": 0.365
+  },
+  "layer5_reproducibility": {
+    "second_run_identical": true,
+    "files_compared": [
+      "metrics.json",
+      "summary.csv",
+      "model.joblib"
+    ],
+    "seed": 42,
+    "data_sha256": "a7aa874d3b068088371eeaa422ebc10f77972dc4c3bb8a4119fa0ff4b952b92f",
+    "data_downloaded": "2026-11-01",
+    "data_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN,TOA_SW_DWN,T2M,RH2M,WS10M,PRECTOTCORR&community=RE&longitude=56.52&latitude=23.23&start=20150101&end=20251231&format=CSV"
+  }
+}

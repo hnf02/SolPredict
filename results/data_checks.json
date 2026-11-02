@@ -1,0 +1,20 @@
+{
+  "rows": 96432,
+  "expected_hours": 96432,
+  "missing_hours": 0,
+  "duplicate_hours": 0,
+  "missing_values": {
+    "ALLSKY_SFC_SW_DWN": 0,
+    "CLRSKY_SFC_SW_DWN": 0,
+    "TOA_SW_DWN": 0,
+    "T2M": 0,
+    "RH2M": 0,
+    "WS10M": 0,
+    "PRECTOTCORR": 0
+  },
+  "night_hours_with_sun_above_1_wm2": 0,
+  "hours_ghi_above_toa": 0,
+  "hours_ghi_above_clear_sky_by_50_wm2": 0,
+  "max_ghi_wm2": 1104.1,
+  "hour_of_highest_mean_ghi": 12
+}

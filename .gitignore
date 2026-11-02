@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+.DS_Store
+.env
+# raw browser downloads (the combined data/ibri_hourly.csv.gz IS committed)
+data/raw/

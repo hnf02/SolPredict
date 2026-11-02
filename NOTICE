@@ -1,0 +1,13 @@
+SolPredict
+Copyright 2026 Alhanoof Al Buraiki
+
+Source code: Apache License 2.0 (see LICENSE).
+
+Data: data/ibri_hourly.csv.gz and samples/sample_input.csv contain hourly
+values from the NASA POWER Project for latitude 23.23, longitude 56.52
+(near Ibri, Oman), 2015-2025, downloaded on 1 November 2026.
+
+"These data were obtained from the NASA Langley Research Center (LaRC) POWER
+Project funded through the NASA Earth Science/Applied Science Program."
+
+Radiation values come from CERES SYN1deg; weather values from MERRA-2.

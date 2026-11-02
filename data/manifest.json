@@ -1,0 +1,23 @@
+{
+  "source": "NASA POWER hourly API (community RE), time standard LST",
+  "source_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN,CLRSKY_SFC_SW_DWN,TOA_SW_DWN,T2M,RH2M,WS10M,PRECTOTCORR&community=RE&longitude=56.52&latitude=23.23&start=20150101&end=20251231&format=CSV",
+  "downloaded": "2026-11-02",
+  "site": {
+    "name": "Ibri, Oman",
+    "latitude": 23.23,
+    "longitude": 56.52
+  },
+  "parameters": [
+    "ALLSKY_SFC_SW_DWN",
+    "CLRSKY_SFC_SW_DWN",
+    "TOA_SW_DWN",
+    "T2M",
+    "RH2M",
+    "WS10M",
+    "PRECTOTCORR"
+  ],
+  "first_hour": "2015-01-01 00:00:00",
+  "last_hour": "2025-12-31 23:00:00",
+  "rows": 96432,
+  "sha256_uncompressed_csv": "a7aa874d3b068088371eeaa422ebc10f77972dc4c3bb8a4119fa0ff4b952b92f"
+}

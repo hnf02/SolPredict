@@ -1,0 +1,112 @@
+{
+  "chosen_model": "ridge",
+  "validation_2023": {
+    "persistence": {
+      "mae_wm2": 39.23,
+      "rmse_wm2": 72.16,
+      "bias_wm2": 0.05,
+      "mae_mw": 19.51,
+      "daily_energy_mae_kwh_m2": 0.408,
+      "hours": 4516,
+      "days": 365,
+      "skill_vs_persistence": 0.0
+    },
+    "seasonal": {
+      "mae_wm2": 39.99,
+      "rmse_wm2": 68.04,
+      "bias_wm2": 15.05,
+      "mae_mw": 19.85,
+      "daily_energy_mae_kwh_m2": 0.457,
+      "hours": 4516,
+      "days": 365,
+      "skill_vs_persistence": 0.0571
+    },
+    "ridge": {
+      "mae_wm2": 35.11,
+      "rmse_wm2": 61.72,
+      "bias_wm2": 2.05,
+      "mae_mw": 17.44,
+      "daily_energy_mae_kwh_m2": 0.365,
+      "hours": 4516,
+      "days": 365,
+      "skill_vs_persistence": 0.1447
+    },
+    "boosting": {
+      "mae_wm2": 35.84,
+      "rmse_wm2": 62.34,
+      "bias_wm2": 0.1,
+      "mae_mw": 17.81,
+      "daily_energy_mae_kwh_m2": 0.389,
+      "hours": 4516,
+      "days": 365,
+      "skill_vs_persistence": 0.1361
+    }
+  },
+  "test_2024_2025": {
+    "persistence": {
+      "mae_wm2": 40.42,
+      "rmse_wm2": 77.94,
+      "bias_wm2": -0.02,
+      "mae_mw": 20.07,
+      "daily_energy_mae_kwh_m2": 0.428,
+      "hours": 9043,
+      "days": 731,
+      "skill_vs_persistence": 0.0
+    },
+    "seasonal": {
+      "mae_wm2": 42.48,
+      "rmse_wm2": 76.55,
+      "bias_wm2": 16.72,
+      "mae_mw": 21.1,
+      "daily_energy_mae_kwh_m2": 0.493,
+      "hours": 9043,
+      "days": 731,
+      "skill_vs_persistence": 0.0178
+    },
+    "ridge": {
+      "mae_wm2": 36.96,
+      "rmse_wm2": 66.96,
+      "bias_wm2": 2.4,
+      "mae_mw": 18.36,
+      "daily_energy_mae_kwh_m2": 0.399,
+      "hours": 9043,
+      "days": 731,
+      "skill_vs_persistence": 0.1409
+    },
+    "boosting": {
+      "mae_wm2": 36.64,
+      "rmse_wm2": 66.14,
+      "bias_wm2": 3.8,
+      "mae_mw": 18.21,
+      "daily_energy_mae_kwh_m2": 0.399,
+      "hours": 9043,
+      "days": 731,
+      "skill_vs_persistence": 0.1514
+    }
+  },
+  "rows": {
+    "train": 70104,
+    "valid": 8760,
+    "test": 17544
+  },
+  "data_checks": {
+    "rows": 96432,
+    "expected_hours": 96432,
+    "missing_hours": 0,
+    "duplicate_hours": 0,
+    "missing_values": {
+      "ALLSKY_SFC_SW_DWN": 0,
+      "CLRSKY_SFC_SW_DWN": 0,
+      "TOA_SW_DWN": 0,
+      "T2M": 0,
+      "RH2M": 0,
+      "WS10M": 0,
+      "PRECTOTCORR": 0
+    },
+    "night_hours_with_sun_above_1_wm2": 0,
+    "hours_ghi_above_toa": 0,
+    "hours_ghi_above_clear_sky_by_50_wm2": 0,
+    "max_ghi_wm2": 1104.1,
+    "hour_of_highest_mean_ghi": 12
+  }
+}

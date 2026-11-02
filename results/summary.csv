@@ -1,0 +1,9 @@
+period,forecast,mae_wm2,rmse_wm2,bias_wm2,mae_mw,daily_energy_mae_kwh_m2,hours,days,skill_vs_persistence
+validation_2023,persistence,39.23,72.16,0.05,19.51,0.408,4516,365,0.0
+validation_2023,seasonal,39.99,68.04,15.05,19.85,0.457,4516,365,0.0571
+validation_2023,ridge,35.11,61.72,2.05,17.44,0.365,4516,365,0.1447
+validation_2023,boosting,35.84,62.34,0.1,17.81,0.389,4516,365,0.1361
+test_2024_2025,persistence,40.42,77.94,-0.02,20.07,0.428,9043,731,0.0
+test_2024_2025,seasonal,42.48,76.55,16.72,21.1,0.493,9043,731,0.0178
+test_2024_2025,ridge,36.96,66.96,2.4,18.36,0.399,9043,731,0.1409
+test_2024_2025,boosting,36.64,66.14,3.8,18.21,0.399,9043,731,0.1514

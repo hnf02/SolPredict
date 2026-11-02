@@ -1,0 +1,11 @@
+{
+  "model": "ridge",
+  "trained_on": "forecast days 2015-01-02 to 2023-12-31",
+  "sha256": "b0d5ee0e6d0e39a16fdc68e30ad0bf7cfbf2a534781ffcb981a289bb8a0e4aa1",
+  "site": {
+    "name": "Ibri, Oman",
+    "latitude": 23.23,
+    "longitude": 56.52
+  },
+  "plant_mw": 500.0
+}
