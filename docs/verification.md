@@ -104,7 +104,7 @@ A 7% gap between two satellite products, plus an approximate tilt conversion, is
 | Random seed | 42 (`config.py`); the chosen ridge model has no randomness |
 | Package versions | Pinned in `requirements.txt` |
 | Same numbers on a second run | `metrics.json`, `summary.csv` and `model.joblib` byte-identical (audit re-runs the pipeline) |
-| Fresh clone | New folder and virtual environment, following the README: data verified, same metrics, same model file and same sample forecast; 14 tests passed (re-run after the audit and the LST input check were added) |
+| Fresh clone | New folder and virtual environment, following the README: data verified, same metrics, same model file and same sample forecast; 14 tests passed |
 
 ## References for the cross-checks
 

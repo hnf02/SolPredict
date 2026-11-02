@@ -121,8 +121,6 @@ solpredict predict --input samples/sample_input.csv
 
 (Rows shortened here; the full 24 rows are in `samples/expected_output.csv`.) The sample input is the last two days of the data, 30–31 Dec 2025, so this is a genuine forecast for a day the model never saw.
 
-**Reviewer access:** the repository is all that is needed. If it is private, the owner grants read access on GitHub.
-
 ---
 
 ## 5. Architecture and decisions
@@ -156,8 +154,8 @@ flowchart LR
 | Predict clearness, then multiply by the known sun position | Predict sunlight in W/m² directly | Separates weather from astronomy; the model only has to learn the weather. |
 | Two no-model baselines | One baseline, or none | "Tomorrow = today" is hard to beat in a sunny desert; "typical day for the season" shows the value of using recent data. I first tried spreading yesterday's *daily* clearness over every hour: it was 19% worse than persistence, because mornings and evenings are always less clear (the sun shines through more air). |
 | Choose the model on 2023, test 2024–2025 once | Pick the better model on the test years | Gradient boosting is 0.8 W/m² better on test, but ridge won on validation. Switching after seeing test results would make the test score untrustworthy, and the simpler model is easier to explain. |
-| Commit the data file (1.5 MB) | Download at run time | NASA can revise recent values; committing guarantees the same numbers for every reviewer. The download command is kept. |
-| End-of-day forecast, one site | Several sites or forecast times | Keeps the project explainable in two days; the method extends to other sites. |
+| Commit the data file (1.5 MB) | Download at run time | NASA can revise recent values; committing guarantees the same numbers for everyone who runs it. The download command is kept. |
+| End-of-day forecast, one site | Several sites or forecast times | Keeps the project small and explainable; the method extends to other sites. |
 
 ---
 
